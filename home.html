@@ -1,0 +1,72 @@
+<html>
+
+<head>
+
+<link rel="stylesheet"
+href="{{ url_for('static',
+filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>
+
+Campus Navigation
+
+</h2>
+
+<form action="/route"
+method="POST">
+
+<select name="start">
+
+<option>Gate</option>
+
+<option>Library</option>
+
+<option>Canteen</option>
+
+<option>Block A</option>
+
+<option>Block B</option>
+
+<option>Auditorium</option>
+
+<option>Parking</option>
+
+</select>
+
+<select name="destination">
+
+<option>Gate</option>
+
+<option>Library</option>
+
+<option>Canteen</option>
+
+<option>Block A</option>
+
+<option>Block B</option>
+
+<option>Auditorium</option>
+
+<option>Parking</option>
+
+</select>
+
+<button>
+
+Find Shortest Route
+
+</button>
+
+</form>
+
+</div>
+
+</body>
+
+</html>
